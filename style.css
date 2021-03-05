@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  height: 100vh;
 }
 
 .main-image-container {
@@ -25,19 +25,30 @@
 
 .main-image {
   width: 100%;
+  border: 2px solid rgb(200, 200, 200);
 }
 
 .thumbs {
+  margin-top: 20px;
+  padding: 0px;
+  border-radius: 10px;
   max-width: 1170px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   justify-content: center;
   align-items: center;
+  background-color: rgb(200, 200, 200);
 }
 
 .thumb {
-  width: 85%;
+  width: 100%;
   padding: 7px;
+}
+
+@media screen and (min-width: 653px) {
+  .thumbs {
+    padding: 10px;
+  }
 }
 
 /* animation */
